@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock-paper-scissors-game</title>
+    <!-- Main Style File  -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Font Google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <p class="you">You: <span id="player-result">0</span></p>
+        <p class="computer">Computer: <span id="computer-result">0</span></p>
+      </div>
+
+      <div class="view-played">
+        <div class="player-choosing">
+          <p>Your Play</p>
+          <img id="player-choosing-img" data-choose="" src="./images/startImg.png" alt="">
+        </div>
+        
+        <div class="computer-choosing">
+          <p>Computer Play</p>
+          <img id="computer-choosing-img" data-choose="" src="./images/startImg.png" alt="">
+        </div>
+      </div>
+
+      <div class="choosing-play-area">
+        <img src="./images/scissors.png" data-play="scissors" alt="">
+        <img src="./images/rock.png" data-play="rock" alt="">
+        <img src="./images/paper.png" data-play="paper" alt="">
+      </div>
+    </div>
+    <!-- Main javaScript File  -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
